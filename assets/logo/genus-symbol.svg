@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="GENUS symbol">
+<defs><clipPath id="disc"><circle cx="60" cy="60" r="42"/></clipPath></defs>
+<ellipse cx="60" cy="60" rx="57" ry="21" transform="rotate(-24 60 60)" fill="none" stroke="#efe6d2" stroke-opacity=".45" stroke-width=".8"/>
+<rect clip-path="url(#disc)" x="0" y="20" width="120" height="17" fill="#efe6d2"/>
+<rect clip-path="url(#disc)" transform="translate(6 0)" x="0" y="39" width="120" height="15" fill="#e8c98f"/>
+<rect clip-path="url(#disc)" transform="translate(-5 0)" x="0" y="56" width="120" height="14" fill="#d99a4e"/>
+<rect clip-path="url(#disc)" transform="translate(8 0)" x="0" y="72" width="120" height="12" fill="#b5622f"/>
+<rect clip-path="url(#disc)" transform="translate(-3 0)" x="0" y="86" width="120" height="12" fill="#6e3a22"/>
+<path d="M60 1 69 14H51Z" fill="#efe6d2"/>
+<circle cx="106" cy="36" r="3" fill="#e8c98f"/>
+</svg>

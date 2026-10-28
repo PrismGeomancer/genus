@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#0e0d0b">
+    <meta property="og:title" content="GENUS — Everything leaves a trace.">
+    <meta property="og:description" content="Scan any Solana token, read its market record as strata, and create your holder card.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="description"
+        content="Everything leaves a trace. Scan a coin, read its market record as strata, and create your holder card.">
+    <title>GENUS — Everything leaves a trace.</title>
+    <link rel="icon" href="assets/logo/genus-symbol.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/genus.css">
+    <script>
+        /* The five-second intro plays once per browser session, and never with reduced motion. */
+        try { if (!sessionStorage.getItem('genus.intro') && !matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('intro-active'); } catch (e) { }
+    </script>
+</head>
+<body>
+    <div id="intro" aria-hidden="true"></div>
+    <header class="header"><a class="brand" href="#discover" aria-label="GENUS home"><img class="brand-symbol"
+                src="assets/logo/genus-symbol.svg" alt=""><span class="wm"><img class="wordmark" src="assets/logo/genus-type.svg"
+                alt="GENUS"></span></a>
+        <nav aria-label="Main navigation"><a href="#discover">SCAN</a><a href="#strata">STRATA</a><a
+                href="#fossils">FOSSIL BED</a><a href="#index">INDEX</a><a href="#collection">MY COLLECTION</a>
+            <!-- Replace this placeholder URL with the GENUS X profile when ready. -->
+            <a class="nav-twitter" href="https://x.com"
+                target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">X / TWITTER ↗</a>
+        </nav><button id="wallet-button" class="button outline small">CONNECT WALLET <span>↗</span></button><button
+            class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </header>
+    <main id="app"></main>
+    <footer>
+        <div class="footer-top"><a class="brand" href="#discover"><img class="brand-symbol"
+                    src="assets/logo/genus-symbol.svg" alt=""><span class="wm"><img class="wordmark" src="assets/logo/genus-type.svg"
+                    alt="GENUS"></span></a><span>EVERYTHING LEAVES A TRACE.</span><span class="mono">DATA · DEXSCREENER · GECKOTERMINAL</span>
+        </div>
+        <div class="footer-bottom">
+            <p>Live data is read in your browser from the public DexScreener and GeckoTerminal APIs and may be delayed or incomplete. Reference coins use illustrative snapshots. PNL uses manually entered positions. Listed tokens are not affiliated
+                with or endorsed by GENUS. Not financial advice.
+            </p>
+            <div><a href="#discover">SCAN</a><a href="#strata">STRATA</a><a href="#fossils">FOSSIL BED</a><a
+                    href="#index">INDEX</a><a
+                    href="https://x.com/intent/tweet?text=EVERYTHING%20LEAVES%20A%20TRACE.%20%24GENUS"
+                    target="_blank" rel="noopener">X ↗</a><a href="#curator">SETTINGS</a><a href="#discover" data-replay-intro>REPLAY INTRO ↺</a></div>
+        </div>
+    </footer>
+    <dialog id="modal" aria-label="Genus dialog"><button class="modal-close" aria-label="Close dialog">×</button>
+        <div id="modal-body"></div>
+    </dialog>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <script src="js/storage.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/strata.js"></script>
+    <script src="js/evolution.js"></script>
+    <script src="js/species.js"></script>
+    <script src="js/lookup.js"></script>
+    <script src="js/wallet.js"></script>
+    <script src="js/cards.js"></script>
+    <script src="js/dust.js"></script>
+    <script src="js/hero-core.js"></script>
+    <script src="js/intro.js"></script>
+    <script src="js/fx.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/agent-tools.js"></script>
+</body>
+</html>
